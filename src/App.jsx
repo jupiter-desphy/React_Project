@@ -1,5 +1,5 @@
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
-import { HomePage, FilmsPage } from "./pages"
+import { HomePage, FilmsPage, SingleFilmPage } from "./pages";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/films" element={<FilmsPage />} />
+        <Route path="film/:id" element={<SingleFilmPage />} />
       </Routes>
     </BrowserRouter>
   );
